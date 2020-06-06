@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'react-router-native';
+import { Link } from 'react-router-dom';
 export default function ShowMore(props) {
     var linkStyles = {
         color: '#0288d1',

@@ -1,12 +1,12 @@
 {
   "name": "@micajeho/react-showmore",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "React Show More Component",
-  "main": "./build/ShowMoreComponent.js",
+  "main": "./build/showMoreComponent.js",
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-router-native": "^5.2.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "scripts": {
     "build": "tsc",
@@ -35,7 +35,7 @@
     "jest": "^26.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-native": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts-ts": "^3.1.0",
     "react-test-renderer": "^16.13.1",
     "rollup": "^2.13.1",
@@ -50,5 +50,7 @@
     "preset": "ts-jest",
     "testEnvironment": "node"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/react-router-dom": "^5.1.5"
+  }
 }
