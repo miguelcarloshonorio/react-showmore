@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import * as React from 'react';
 import {Link} from 'react-router-native';
 
 export interface IProps {
@@ -8,17 +8,17 @@ export interface IProps {
   lessText: string;
 }
 
-export default function ShowMore(props: IProps): React.Element {
+export default function ShowMore(props: IProps): JSX.Element {
   const linkStyles = {
     color: '#0288d1',
     textDecoration: 'underline',
     'a:visited': '#0288d1',
   };
   const {content, minLenth} = props;
-  const [displayText, setDisplayText] = useState(
+  const [displayText, setDisplayText] = React.useState(
     content.substring(0, minLenth)
   );
-  const [moreText, setMoreText] = useState(props.moreText || 'More');
+  const [moreText, setMoreText] = React.useState(props.moreText || 'More');
 
   const handleClick = () => {
     const {lessText, moreText} = props;
@@ -35,7 +35,7 @@ export default function ShowMore(props: IProps): React.Element {
     <>
       <div>
         {displayText}
-        <Link href="#" onClick={handleClick} style={linkStyles}>
+        <Link to="#" onClick={handleClick} style={linkStyles}>
           {moreText}
         </Link>
       </div>
