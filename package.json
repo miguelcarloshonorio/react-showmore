@@ -1,8 +1,8 @@
 {
-  "name": "react-showmore",
+  "name": "@micajeho/react-showmore",
   "version": "1.0.0",
   "description": "React Show More Component",
-  "main": "./lib/ShowMoreComponent.js",
+  "main": "./build/ShowMoreComponent.js",
   "peerDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -20,7 +20,7 @@
     "show-more"
   ],
   "author": "@micajeho",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/miguelcarloshonorio/react-showmore/issues"
   },
