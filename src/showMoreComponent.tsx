@@ -1,5 +1,4 @@
 import * as React from 'react';
-import {Link} from 'react-router-dom';
 
 export interface IProps {
   minLenth: number;
@@ -35,9 +34,9 @@ export default function ShowMore(props: IProps): JSX.Element {
     <>
       <div>
         {displayText}
-        <Link to="#" onClick={handleClick} style={linkStyles}>
+        <a href="#" onClick={handleClick} style={linkStyles}>
           {moreText}
-        </Link>
+        </a>
       </div>
     </>
   );

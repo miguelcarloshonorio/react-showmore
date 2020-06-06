@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 export default function ShowMore(props) {
     var linkStyles = {
         color: '#0288d1',
@@ -23,6 +22,6 @@ export default function ShowMore(props) {
     return (React.createElement(React.Fragment, null,
         React.createElement("div", null,
             displayText,
-            React.createElement(Link, { to: "#", onClick: handleClick, style: linkStyles }, moreText))));
+            React.createElement("a", { href: "#", onClick: handleClick, style: linkStyles }, moreText))));
 }
 //# sourceMappingURL=showMoreComponent.js.map

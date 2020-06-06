@@ -12,8 +12,25 @@
 
 ## Install
 
+NPM:
 ```sh
-npm install
+npm i @micajeho/react-showmore
+```
+
+YARN:
+```sh
+yarn add @micajeho/react-showmore
+```
+
+## Usage
+
+```javascript
+    <ShowMore 
+      minLenth={15}
+      content={content} 
+      moreText={' More...'} 
+      lessText={' ... Less'} 
+     />
 ```
 
 ## Author
